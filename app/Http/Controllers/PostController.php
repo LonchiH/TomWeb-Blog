@@ -12,7 +12,9 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        $posts = Post::latest()->get();
+        
+        return view('posts', compact('posts'));
     }
 
     /**
@@ -20,7 +22,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -28,7 +30,15 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'author' => 'required',
+            'title' => 'required',
+            'body' => 'required'
+        ]);
+
+        Post::create($request->all());
+
+        return redirect()->route('posts.index');
     }
 
     /**
@@ -36,7 +46,7 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        //
+        return view('show', compact('post'));
     }
 
     /**
