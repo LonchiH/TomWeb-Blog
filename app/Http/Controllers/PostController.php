@@ -13,7 +13,7 @@ class PostController extends Controller
     public function index()
     {
         $posts = Post::latest()->get();
-        
+
         return view('posts', compact('posts'));
     }
 
@@ -22,7 +22,6 @@ class PostController extends Controller
      */
     public function create()
     {
-        
     }
 
     /**
@@ -54,7 +53,7 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
-        //
+        return view('posts.edit', compact('post'));
     }
 
     /**
@@ -62,7 +61,15 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
-        //
+        $request->validate([
+            'author' => 'required',
+            'title' => 'required',
+            'body' => 'required'
+        ]);
+
+        $post->update($request->all());
+
+        return redirect()->route('posts.index');
     }
 
     /**

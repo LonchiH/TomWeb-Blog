@@ -6,5 +6,7 @@
             {{$post->body}}
         </p>
         <a href="/">Return</a>
+    @include('components.edit')
+
     </article>
 </x-layout>
