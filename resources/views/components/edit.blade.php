@@ -2,7 +2,7 @@
 <form action="{{ route('posts.destroy', ['post' => $post->id]) }}" method="POST">
    @csrf
    @method('DELETE')
-   <div class="flex flex-row mt-8 space-x-3">
+   <div class="flex items-center justify-center mt-8 space-x-3">
       <a href="/" class="text-white bg-gray-800 hover:bg-gray-600 font-medium rounded-lg text-sm py-2 px-2.5 dark:bg-gray-800 dark:hover:bg-gray-600">Return</a>
       <button class="text-white bg-gray-800 hover:bg-gray-600 font-medium rounded-lg text-sm py-2 px-2.5 dark:bg-gray-800 dark:hover:bg-gray-600" type="button" data-drawer-target="drawer-form" data-drawer-show="drawer-form" aria-controls="drawer-form">
       Edit Post
