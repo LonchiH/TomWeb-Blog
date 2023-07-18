@@ -34,7 +34,6 @@
                       {{$post->author}}
                     </a>
                   </p>
-                  {{-- <p class="text-gray-600">Author</p> --}}
                 </div>
               </div>
             </article>
