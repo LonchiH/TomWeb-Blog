@@ -13,7 +13,7 @@
             
             <article class="flex max-w-xl flex-col items-start justify-between bg-gray-100 p-3 rounded-md">
               <div class="flex items-center gap-x-4 text-xs">
-                <time class="text-gray-500">{{$post->created_at}}</time>
+                <time class="text-gray-500">{{$post->created_at->diffForHumans()}}</time>
                 <div class="relative rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Receipt #{{$post->id}}</div>
               </div>
               <div class="group relative">
