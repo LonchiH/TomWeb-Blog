@@ -7,6 +7,14 @@
         </p>
         <a href="/">Return</a>
     @include('components.edit')
-
+    <form action="{{ route('posts.destroy', ['post' => $post->id]) }}" method="POST">
+        @csrf
+        @method('DELETE')
+          <div class="mt-8">
+              <button class="text-white bg-gray-800 hover:bg-gray-600 font-medium rounded-lg text-sm py-2 px-2.5 dark:bg-gray-800 dark:hover:bg-gray-600" type="submit">
+              Delete
+              </button>
+           </div>
+      </form>
     </article>
 </x-layout>
