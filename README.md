@@ -8,7 +8,6 @@ Install the following:
 1.PHP
 2.Composer - https://getcomposer.org/
 3.Laravel - Here is a complete and detailed guide: https://laravel.com/docs/5.0#install-laravel
-[Jiajian Chan](http://github.com/jcc)
 ```
 clone the repo
 ```
