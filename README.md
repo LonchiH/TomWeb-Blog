@@ -63,12 +63,12 @@ PHP errors:
 
 # Features
 
-Create a Post
-View All Posts
-View a Single Post
-Update a Single Post
-Delete a Single Post
-Export view data to PDF
+- Create a Post
+- View All Posts
+- View a Single Post
+- Update a Single Post
+- Delete a Single Post
+- Export view data to PDF
 
 
 # That's all!
