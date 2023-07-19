@@ -6,7 +6,7 @@
 ## Quick Start 
 clone the repo
 ```
-    git clone git@github.com:LonchiH/TomWeb-Blog.git
+git clone git@github.com:LonchiH/TomWeb-Blog.git
 ```
 
 change current directory
@@ -34,12 +34,16 @@ start server
 ```
 php artisan serve
 ```
-credentails
+.env sample DB values
 ```
-username: root
-password: [yourPassword]
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=blog
+DB_USERNAME=root
+DB_PASSWORD=[pass]
 ```
-# That's all 🎊🎉 
+# That's all!
 
 ## ScreenShots
 
