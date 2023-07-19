@@ -6,8 +6,8 @@ Prerequisites
 ```
 Install the following:
 1.PHP
-2.[Composer](https://getcomposer.org/)
-3.Laravel. Here is a complete and detailed guide: https://laravel.com/docs/5.0#install-laravel
+2.Composer - https://getcomposer.org/
+3.Laravel - Here is a complete and detailed guide: https://laravel.com/docs/5.0#install-laravel
 ```
 clone the repo
 ```
@@ -40,6 +40,13 @@ php artisan serve
 ```
 .env sample DB values
 ```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=blog
+DB_USERNAME=root
+DB_PASSWORD=[pass]
+```
 Troubleshooting and FAQs:
 ```
 PHP errors:
@@ -53,13 +60,7 @@ PHP errors:
     b. extension=pgsql
     c. extension=pdo_mysql
 ```
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=blog
-DB_USERNAME=root
-DB_PASSWORD=[pass]
-```
+
 Features
 ```
 Create a Post
