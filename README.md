@@ -44,8 +44,17 @@ DB_DATABASE=blog
 DB_USERNAME=root
 DB_PASSWORD=[pass]
 ```
+Features
+```
+Create a Post
+View All Posts
+View a Single Post
+Update a Single Post
+Delete a Single Post
+Download data
+```
+
 # That's all!
 
-## ScreenShots
 
 
