@@ -1,5 +1,5 @@
 # TomasinoWeb Blog
-a simple blog-style application
+a simple blog-style website
 
 ## Quick Start 
 clone the repo
