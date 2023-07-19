@@ -14,6 +14,6 @@ class Post extends Model
 
     public function getExcerptAttribute()
     {
-        return Str::limit($this->body, 40);
+        return Str::limit($this->body, 100);
     }
 }
