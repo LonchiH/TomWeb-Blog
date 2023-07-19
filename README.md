@@ -9,7 +9,7 @@ git clone git@github.com:LonchiH/TomWeb-Blog.git
 change current directory
 
 ```
-cd Laravel-libraray-management-system
+cd [path]
 ```
 install dependencies
 ```
