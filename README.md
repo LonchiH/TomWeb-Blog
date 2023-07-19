@@ -2,11 +2,14 @@
 a simple blog-style website
 
 ## Quick Start 
+Prerequisites
+```
+Install [Composer](https://getcomposer.org/)
+```
 clone the repo
 ```
 git clone git@github.com:LonchiH/TomWeb-Blog.git
 ```
-
 change current directory
 
 ```
@@ -15,10 +18,6 @@ cd [path]
 install dependencies
 ```
 composer install
-````
-install js dependencies
-```
-npm install && npm run dev
 ````
 create .env file
 ```
