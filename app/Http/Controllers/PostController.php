@@ -92,7 +92,6 @@ class PostController extends Controller
     {
         $post = Post::findOrFail($id);
 
-        //ignore the error
         $pdf = FacadePdf::loadView('pdf', compact('post'));
 
         return $pdf->download($post->author. '.pdf');
