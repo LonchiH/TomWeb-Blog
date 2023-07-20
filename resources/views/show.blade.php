@@ -1,5 +1,8 @@
 <x-layout>
     <article class="container max-w-screen-md mx-auto p-4">
+
+        <a class="btn btn-primary" href="{{ route('post.pdf', ['id' => $post->id]) }}">Export to PDF</a>
+
         
         <p class="p-3 text-gray-500 text-center dark:text-black first-line:uppercase text-7xl">{{$post->title}}</p>
         <div class="flex items-center justify-center">

@@ -16,5 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [PostController::class, 'index']);
 Route::post('posts/{post}', [PostController::class, 'show'])->name('show');
+Route::get('/post/{id}/pdf', [PostController::class, 'generatePDF'])->name('post.pdf');
+
 
 Route::resource('posts', PostController::class);

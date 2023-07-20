@@ -2,8 +2,12 @@
 
 namespace App\Http\Controllers;
 
+
 use App\Models\Post;
 use Illuminate\Http\Request;
+use PDF;
+
+
 
 class PostController extends Controller
 {
@@ -81,5 +85,16 @@ class PostController extends Controller
         $post->delete();
 
         return redirect()->route('posts.index');
+    }
+
+
+    public function generatePDF($id)
+    {
+        $post = Post::findOrFail($id);
+
+        //ignore the error
+        $pdf = PDF::loadView('pdf', compact('post'));
+
+        return $pdf->download($post->author. '.pdf');
     }
 }
