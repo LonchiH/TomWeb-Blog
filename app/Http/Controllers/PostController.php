@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use Illuminate\Http\Request;
-use PDF;
+use Barryvdh\DomPDF\Facade\PDF as FacadePdf;
 
 
 
@@ -93,7 +93,7 @@ class PostController extends Controller
         $post = Post::findOrFail($id);
 
         //ignore the error
-        $pdf = PDF::loadView('pdf', compact('post'));
+        $pdf = FacadePdf::loadView('pdf', compact('post'));
 
         return $pdf->download($post->author. '.pdf');
     }
