@@ -12,9 +12,8 @@
     ],
     "env": {
         "APP_ENV": "production",
-        "APP_DEBUG": "false",
+        "APP_DEBUG": "true",
         "APP_URL": "https://tomweb-blog.vercel.app",
-        "APP_KEY": "base64:e02s7tmOeO0delnkzdi90A4zWSnaoQVnf5gyjhJgimg=",
 
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
