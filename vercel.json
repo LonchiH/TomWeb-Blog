@@ -14,7 +14,7 @@
         "APP_ENV": "production",
         "APP_DEBUG": "true",
         "APP_URL": "https://tomweb-blog.vercel.app",
-        "APP_KEY": "VXcyJG3lAXA2d5heKHkhOElh7CAsRsSOFV9JG6xbXKk",
+        "APP_KEY": "base64:VXcyJG3lAXA2d5heKHkhOElh7CAsRsSOFV9JG6xbXKk=",
 
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
